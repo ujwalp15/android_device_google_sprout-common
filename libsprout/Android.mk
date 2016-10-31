@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,6 +13,7 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
+
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
@@ -22,5 +23,17 @@ LOCAL_SRC_FILES := \
 LOCAL_SHARED_LIBRARIES := libbinder
 LOCAL_MODULE := libsprout
 LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+    GraphicBuffer.cpp
+
+LOCAL_C_INCLUDES := gui
+LOCAL_SHARED_LIBRARIES := libgui libutils liblog libbinder libandroid libui
+LOCAL_MODULE := libcamera
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
 include $(BUILD_SHARED_LIBRARY)
