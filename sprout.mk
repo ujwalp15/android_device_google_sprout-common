@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libsprout \
-    libcamera
+    libcamera \
+    libshim_wvm
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1
