@@ -87,3 +87,6 @@ USE_CAMERA_STUB := true
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/google/sprout-common/sepolicy
+
+# Seccomp
+BOARD_SECCOMP_POLICY += device/google/sprout-common/seccomp
