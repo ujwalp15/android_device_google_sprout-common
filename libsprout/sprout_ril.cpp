@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,4 +20,8 @@ extern "C" void RIL_register_socket() {}
 extern "C" int _ZN7android6Parcel13writeString16EPKDsj();
 extern "C" int _ZN7android6Parcel13writeString16EPKtj() {
     return _ZN7android6Parcel13writeString16EPKDsj();
+}
+extern "C" int _ZN7android6Parcel13writeString16EPKtjparcel_writeString();
+extern "C" int _ZN7android6Parcel13writeString16EPKtjparcel_writeString() {
+    return _ZN7android6Parcel13writeString16EPKtjparcel_writeString();
 }
