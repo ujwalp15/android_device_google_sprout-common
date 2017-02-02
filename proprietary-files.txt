@@ -28,7 +28,6 @@ lib/libJpgEncPipe.so
 lib/libfeatureio.so
 lib/libcam.utils.so
 lib/libblisrc32.so
-lib/libaudiopolicymanagersprout.so
 lib/libion_mtk.so
 lib/libnvram.so
 lib/libbluetooth_mtk_pure.so

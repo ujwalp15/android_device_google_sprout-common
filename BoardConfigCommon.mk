@@ -53,6 +53,10 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_NO_USB_STORAGE := true
 
+#MTK
+BOARD_USES_LEGACY_MTK_AV_BLOB := true
+BOARD_HAS_MTK_HARDWARE := true
+
 # OpenGL
 USE_OPENGL_RENDERER:= true
 
