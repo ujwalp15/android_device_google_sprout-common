@@ -6,7 +6,7 @@ import /init.modem.rc
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
     setprop ro.mtk.hardware mt6582
-    export LD_SHIM_LIBS /system/lib/librilmtk.so|libsprout.so:/system/lib/libmtkjpeg.so|libsprout.so:/system/bin/wpa_supplicant|libsprout.so:/system/lib/hw/camera.mt6582.so|libcamera.so:/system/vendor/lib/libwvm.so|libshim_wvm.so
+    export LD_SHIM_LIBS /system/lib/librilmtk.so|libsprout.so:/system/lib/libmtkjpeg.so|libsprout.so:/system/bin/wpa_supplicant|libsprout.so:/system/lib/hw/camera.mt6582.so|libcamera.so:/system/vendor/lib/libwvm.so|libshim_wvm.so:/system/lib/libcam.client.so|libcam_platform.so
 
 on init
     mkdir /protect_f 0771 system system
@@ -351,7 +351,7 @@ on post-fs-data
     chown bluetooth radio /dev/ttyGS2
     chmod 0660 /dev/ttyGS2
 
-    #Use uinput's default permission
+    #Use uinputs default permission
     chown system net_bt_admin /dev/uinput
 
     #TV-out
@@ -835,4 +835,3 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
 #
 # Connectivity related services (End)
 #
-
