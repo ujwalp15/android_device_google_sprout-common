@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 
 # USE_CUSTOM_AUDIO_POLICY := 1
 
-PRODUCT_PROPERTY_OVERRIDES += \
+# PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SproutRIL
 
 # FM Radio
