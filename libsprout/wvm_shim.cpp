@@ -20,7 +20,6 @@ extern "C" int _ZN7android16MediaBufferGroupC1Ev() {
     return _ZN7android16MediaBufferGroupC1Ej(0);
 }
 
-extern "C" bool _ZN7android16MediaBufferGroup14acquire_bufferEPPNS_11MediaBufferEb();
-extern "C" bool _ZN7android16MediaBufferGroup14acquire_bufferEPPNS_11MediaBufferEb() {
-  return _ZN7android16MediaBufferGroup14acquire_bufferEPPNS_11MediaBufferEb();
-}
+extern "C" void _ZN7android16MediaBufferGroup14acquire_bufferEPPNS_11MediaBufferEb() { }
+
+extern "C" void _ZNK7android11MediaSource11ReadOptions9getSeekToEPxPNS1_8SeekModeE() { }
